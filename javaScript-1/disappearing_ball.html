@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disappearing ball</title>
+  <style>
+    .circle {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+    #red {
+      background-color: red;
+    }
+    #green {
+      background-color: green;
+    }
+    #blue {
+      background-color: blue;
+    }
+  </style>
+</head>
+<body>
+  <div style="display: flex;gap: 10px;">
+    <div class="circle" id="red"></div>
+    <div class="circle" id="green"></div>
+    <div class="circle" id="blue"></div>
+  </div>
+  
+  <script>
+    document.getElementById('red').onclick = function() {
+      document.getElementById('red').style.display = 'none';
+    }
+    document.getElementById('blue').onclick = function() {
+      document.getElementById('blue').style.display = 'none';
+    }
+    document.getElementById('green').onclick = function() {
+      document.getElementById('green').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
